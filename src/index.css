@@ -1,13 +1,480 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --h-color: #242424;
+  --p-color: #747474;
+  --a-color: #999999;
+  --primary: #ff6a28;
+  --black: #000;
+  --white: #ffffff;
+  --hover: all 0.5s;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Libre Franklin", sans-serif;
+  margin: 0;
+  /* background-color: var(--black); */
+   /* color: var(--white) !important; */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* ====================atoms============== */
+.btn {
+  color: var(--white);
+  text-transform: capitalize;
+  margin-top: 22px;
+  padding: 0px 0px 5px 0px;
+  border-radius: 0;
+  margin: 0 auto;
+  border-bottom: 2px solid var(--white);
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  color: var(--primary);
+  border-bottom: 2px solid var(--primary);
+}
+
+.heading-data {
+  margin-bottom: 28px;
+}
+
+.paragrapp {
+  color: var(--p-color);
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+.price {
+  font-size: 13px;
+  color: var(--h-color);
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.productbtn {
+  color: var(--white);
+  padding: 0 13px;
+  background-color: var(--primary);
+  font-size: 13px;
+  text-transform: capitalize;
+  border: transparent;
+  line-height: 24px;
+  border-radius: 2px;
+  top: 15px;
+  left: 15px;
+}
+
+.blogdata {
+  font-size: 16px;
+  color: var(--h-color);
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/* ===============navbar================ */
+.navbar {
+  padding: 20px 0;
+}
+
+.navbar ul li {
+  padding: 10px 20px;
+}
+
+.navbar ul li a {
+  font-size: 13px;
+  padding: 0;
+  padding: 10px 25px;
+  color: var(--h-color);
+  text-transform: capitalize;
+}
+.navbar .head-list p {
+  color: var(--p-color);
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+.navbar .head-list p a {
+  color: var(--p-color);
+}
+.navbar .head-list a{
+  color: var(--h-color);
+  font-size: 15px;
+}
+
+.navbar .head-list p a:hover {
+  color: var(--primary);
+}
+
+/* =================banner================ */
+.banner {
+  background-image: url("https://htmldemo.net/reid/reid/assets/img/slider/slide1.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner .banner-img img {
+  width: 460px;
+}
+
+.banner .banner-data p {
+  color: var(--white);
+  margin: 22px 0;
+}
+
+/* ======================collection================== */
+.collection {
+  padding: 80px 30px 39px;
+}
+
+.heading-data h2 {
+  font-size: 36px;
+  color: var(--h-color);
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: -1.8px;
+  line-height: 38px;
+
+}
+
+.collection ul .paragrapp {
+  padding-right: 30px;
+  transition: var(--hover);
+}
+
+.collection ul .active {
+  color: var(--primary);
+}
+
+.collection ul {
+  margin-bottom: 35px;
+}
+
+.collection ul .paragrapp:hover {
+  color: var(--primary);
+}
+
+.product-card {
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.product-card .product-data h3 a {
+  font-size: 12px;
+  color: var(--a-color);
+}
+
+.product-card .product-data p {
+  font-size: 13px;
+  color: #a4a4a4;
+  text-decoration: line-through;
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+.pro-cart button{
+  top: 10px;
+  right: 10px;
+  visibility: hidden;
+  transition: all 0.2s;
+}
+
+.product-cart:hover .pro-cart button{
+  visibility: visible;
+}
+
+/* ===================shoes=================== */
+.shoes {
+  padding: 0 30px 80px;
+}
+
+.shoes-img {
+  background-image: url("https://htmldemo.net/reid/reid/assets/img/bg/banner3.jpg");
+  height: 75vh;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.shoes h1 {
+  font-size: 48px;
+  color: var(--h-color);
+  text-transform: capitalize;
+  font-weight: 600;
+  line-height: 54px;
+  margin-bottom: 75px;
+}
+
+.shoes .btn {
+  color: var(--h-color);
+  border-bottom: 2px solid var(--h-color);
+}
+
+.shoes .btn:hover {
+  color: var(--primary);
+  border-bottom: 2px solid var(--primary);
+}
+
+/* ====================blog=================== */
+.blog .blog-data p {
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+.blog .blog-data p a {
+  color: var(--primary);
+  line-height: 24px;
+}
+
+.blog-info {
+
+  border-bottom: 1px solid #ddd;
+}
+
+.blog-card {
+  padding-bottom: 75px;
+}
+
+/* =====================follow===================== */
+.follow {
+  padding: 70px 40px 75px;
+  border-bottom: 1px solid #ddd;
+}
+
+.follow .follow-img img {
+  width: 265px;
+}
+
+.follow .paragrapp {
+  margin-top: 22px;
+  cursor: pointer;
+  transition: var(--hover);
+}
+
+.follow .paragrapp:hover {
+  color: var(--primary);
+}
+
+/* ==========================footer=============== */
+footer {
+  padding: 74px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+footer h2 {
+  margin-bottom: 16px;
+}
+
+footer .fot-data ul li a {
+  font-size: 13px;
+  color: var(--p-color);
+  line-height: 30px;
+  text-transform: capitalize;
+  transition: var(--hover);
+}
+
+footer .fot-data ul li a:hover {
+  color: var(--primary);
+}
+
+footer .contact-icon span i {
+  height: 40px;
+  width: 40px;
+  background-color: var(--white);
+  color: var(--a-color);
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  margin-right: 10px;
+  transition: var(--hover);
+  cursor: pointer;
+}
+
+footer .contact-icon span i:hover {
+  background-color: var(--h-color);
+  color: var(--white);
+}
+
+footer .insert input {
+  display: block;
+  width: 100%;
+  border: 1px solid #e1e1e1;
+  padding: 0px 20px;
+  line-height: 43px;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+footer .fot-data .para {
+  line-height: 28px;
+}
+
+footer .insert button {
+  width: 100%;
+  background-color: var(--h-color);
+  color: var(--white);
+  font-size: 11px;
+  text-align: center;
+  line-height: 43px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: transparent;
+  border-radius: 3px;
+}
+
+.footer-bottom .web-data {
+  padding: 30px;
+  font-size: 13px;
+}
+
+.footer-bottom .web-data p {
+  color: var(--p-color);
+}
+
+.footer-bottom .web-data p a {
+  color: var(--primary);
+  font-weight: 700;
+  transition: var(--hover);
+}
+
+.footer-bottom .web-data p a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom ul li a {
+  color: var(--p-color);
+  font-size: 13px;
+  text-transform: capitalize;
+  margin-right: 25px;
+}
+
+
+
+
+
+
+
+
+/* admin page */
+.product-deltais {
+  padding: 30px 80px;
+  background-color: var(--white);
+  border: 1px solid var(--h-color);
+  margin: 50px auto;
+}
+
+.product-deltais label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.product-deltais label input {
+  color: var(--h-color);
+}
+
+.pro-table table,
+tr,
+td {
+  border: 1px solid #ddd;
+}
+
+.pro-table table th {
+  font-size: 14px;
+  color: var(--p-color);
+  text-transform: uppercase;
+  background-color: #f2f0f0;
+  border-bottom: 3px solid var(--primary);
+}
+
+.pro-table table .remove {
+  color: var(--primary);
+  font-size: 17px;
+}
+
+.pro-table table td {
+  color: var(--p-color);
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.css-byenzh-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked {
+  color: var(--primary) !important;
+}
+.css-byenzh-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked+.MuiSwitch-track {
+  background-color: var(--primary) !important;
+}
+.pro-table table .update {
+  background-color: var(--primary);
+  padding: 5px 20px;
+  border: transparent;
+  color: var(--white);
+}
+.pro-table table img {
+  width: 100px;
+}
+.model {
+  padding: 20px 50px;
+  background-color: var(--white);
+  box-shadow: 0px 3px 10px gray;
+  display: inline-block;
+  position: fixed;
+  top: 20px;
+  left: 35%;
+}
+.model span {
+  align-items: end;
+  display: block;
+}
+.model label {
+  display: block;
+  margin-bottom: 20px;
+}
+.total-amout .total-head h2{
+  color: var(--white);
+  background-color: var(--h-color);
+  font-size: 16px;
+  padding: 15px;
+}
+.total-amout{
+  border: 1px solid #ddd;
+}
+.total-amout .total-data{
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.total-amout .total-data h3{
+  font-size: 20px;
 }

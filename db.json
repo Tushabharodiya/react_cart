@@ -1,0 +1,100 @@
+{
+  "products": [
+    {
+      "id": "e920",
+      "image": "https://htmldemo.net/reid/reid/assets/img/product/product7.jpg",
+      "name": "Beats EP Wired",
+      "price": "60.00",
+      "discount": "86.00",
+      "offer": "-7%",
+      "avilable": false
+    },
+    {
+      "id": "53bb",
+      "image": "https://htmldemo.net/reid/reid/assets/img/product/product1.jpg",
+      "name": "Marshall Portable  Bluetooth",
+      "price": "60.00",
+      "discount": "86.00",
+      "offer": "-7%",
+      "avilable": true
+    },
+    {
+      "id": "acc3",
+      "image": "https://htmldemo.net/reid/reid/assets/img/product/product6.jpg",
+      "name": "Beats Solo2 Solo 2",
+      "price": "60.00",
+      "discount": "",
+      "offer": "",
+      "avilable": true
+    },
+    {
+      "id": "0952",
+      "image": "https://htmldemo.net/reid/reid/assets/img/product/product19.jpg",
+      "name": "Marshall Portable  Bluetooth",
+      "price": "60.00",
+      "discount": "86.00",
+      "offer": "-7%",
+      "avilable": true
+    },
+    {
+      "id": "2f8e",
+      "image": "https://htmldemo.net/reid/reid/assets/img/product/product18.jpg",
+      "name": "Apple iPad with Retina",
+      "price": "60.00",
+      "discount": "",
+      "offer": "new",
+      "avilable": false
+    },
+    {
+      "id": "88cb",
+      "image": " https://htmldemo.net/reid/reid/assets/img/product/product4.jpg",
+      "name": " Koss KPH7 Portable",
+      "price": "60.00",
+      "discount": "",
+      "offer": " ",
+      "avilable": true
+    }
+  ],
+  "cart": [
+    {
+      "id": "e920",
+      "image": "https://htmldemo.net/reid/reid/assets/img/product/product7.jpg",
+      "name": "Beats EP Wired",
+      "price": "60.00",
+      "discount": "86.00",
+      "offer": "-7%",
+      "avilable": true,
+      "quantity": 1
+    },
+    {
+      "id": "53bb",
+      "image": "https://htmldemo.net/reid/reid/assets/img/product/product1.jpg",
+      "name": "Marshall Portable  Bluetooth",
+      "price": "60.00",
+      "discount": "86.00",
+      "offer": "-7%",
+      "avilable": true,
+      "quantity": 3
+    },
+    {
+      "id": "acc3",
+      "image": "https://htmldemo.net/reid/reid/assets/img/product/product6.jpg",
+      "name": "Beats Solo2 Solo 2",
+      "price": "60.00",
+      "discount": "",
+      "offer": "",
+      "avilable": true,
+      "quantity": 1
+    },
+    {
+      "id": "2f8e",
+      "image": "https://htmldemo.net/reid/reid/assets/img/product/product18.jpg",
+      "name": "Apple iPad with Retina",
+      "price": "60.00",
+      "discount": "",
+      "offer": "new",
+      "avilable": true,
+      "quantity": 2
+    }
+  ]
+}
